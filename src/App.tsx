@@ -1,5 +1,14 @@
+import { ThemeProvider } from "styled-components";
+
+import { GlobalStyle, MyTheme } from "./styles";
+
 const App = () => {
-  return <h1>Secret Words</h1>;
+  return (
+    <ThemeProvider theme={MyTheme}>
+      <h1>App</h1>
+      <GlobalStyle />
+    </ThemeProvider>
+  );
 };
 
 export default App;
