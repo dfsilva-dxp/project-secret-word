@@ -1,11 +1,13 @@
 import { ThemeProvider } from "styled-components";
 
+import { Home } from "page";
+
 import { GlobalStyle, MyTheme } from "./styles";
 
 const App = () => {
   return (
     <ThemeProvider theme={MyTheme}>
-      <h1>App</h1>
+      <Home />
       <GlobalStyle />
     </ThemeProvider>
   );
