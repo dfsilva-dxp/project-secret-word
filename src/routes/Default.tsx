@@ -14,6 +14,14 @@ const Router = () => {
           </Protected>
         }
       />
+      <Route
+        path="end"
+        element={
+          <Protected isSignedIn={false}>
+            <h1>End</h1>
+          </Protected>
+        }
+      />
     </Routes>
   );
 };
