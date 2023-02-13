@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Default = styled.button`
+export const Wrapper = styled.button`
   ${({ theme }) => css`
     position: relative;
     padding: ${theme.spacings.xsmall} ${theme.spacings.small};
