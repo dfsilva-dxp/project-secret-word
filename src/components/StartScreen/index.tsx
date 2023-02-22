@@ -4,7 +4,7 @@ import Button from "components/Button";
 
 import * as S from "./styles";
 
-import { StartScreenProps } from "./type";
+import { StartScreenProps } from "./startScreen";
 
 const StartScreen = ({ handleStarGame }: StartScreenProps) => {
   return (

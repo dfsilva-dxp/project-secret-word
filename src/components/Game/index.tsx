@@ -7,7 +7,6 @@ import { GameProps } from "./game";
 
 const Game = ({
   verifyLetter,
-  pickedWord,
   pickedCategory,
   letters,
   guessedLetters,

@@ -1,4 +1,5 @@
 import { createGlobalStyle, css } from "styled-components";
+import "react-toastify/dist/ReactToastify.css";
 
 const GlobalStyle = createGlobalStyle`
 ${({ theme }) => css`
@@ -63,6 +64,13 @@ ${({ theme }) => css`
   [disabled] {
     opacity: 0.6;
     cursor: not-allowed;
+  }
+
+  .Toastify__toast-theme--colored.Toastify__toast--success {
+    background: ${theme.colors.green} !important;
+  }
+  .Toastify__toast-theme--colored.Toastify__toast--error {
+    background: ${theme.colors.red} !important;
   }
 `}
 `;

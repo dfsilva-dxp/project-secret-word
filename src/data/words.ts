@@ -1,4 +1,4 @@
-type WordListTypes = {
+export type WordListTypes = {
   [key: string]: string[];
 };
 

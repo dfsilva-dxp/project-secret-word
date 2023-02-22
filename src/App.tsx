@@ -1,16 +1,23 @@
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
+import { ToastContainer } from "react-toastify";
+
+import { MyRoutes } from "routes";
+
+import { GameProvider } from "context/gameContext";
 
 import { GlobalStyle, MyTheme } from "./styles";
-import { Home } from "page";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <ThemeProvider theme={MyTheme}>
-        <Home />
-        <GlobalStyle />
-      </ThemeProvider>
+      <GameProvider>
+        <ThemeProvider theme={MyTheme}>
+          <MyRoutes />
+          <ToastContainer autoClose={2500} />
+          <GlobalStyle />
+        </ThemeProvider>
+      </GameProvider>
     </BrowserRouter>
   );
 };
